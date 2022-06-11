@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 // import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
 
 // import Accordion from "./components/Accordion";
 
@@ -21,13 +22,9 @@ const options = [
     { label: "The color blue", value: 'blue' }
 ]
 export default () => {
-   const [selected, setSelected]=useState(options[0]);
-    return (<div>
-        {/* <Search /> */} 
-        <Dropdown
-        selected={selected}
-        onSelectedChange={setSelected}
-        options={options} />
-        {/* <Accordion items={items}/> */}
+
+return (<div>
+       <Translate />
+      
     </div>);
 }; 
